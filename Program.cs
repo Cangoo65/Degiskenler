@@ -1,5 +1,15 @@
-﻿string str = "Ders";
-int int1 = 10;
-int int2 = 20;
-int int3 = int1 + int2;
-Console.WriteLine(int3);
+﻿try
+{
+    var a = "Ali";
+    Console.WriteLine(int.Parse (a) );
+    Console.WriteLine("İşlem Başarı İle Sonuçlandı");
+}
+catch(Exception ex)
+{
+    Console.WriteLine ("İşlemde " + ex.Message + " hatası oluştu." );
+}
+finally
+{
+    Console.WriteLine("İşlem sona erdi");
+    Console.ReadLine();
+}
